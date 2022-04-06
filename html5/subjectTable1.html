@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!-- subjectTable1.html -->
+<html lang="ko">
+<head><meta charset="utf-8"/><meta name="viewport"content="width=device-width, initial-scale=1"/>
+<style>
+ table, thead, tbody, tfoot, tr, th, td { border: 1px solid black;	border-collapse: collapse; text-align: center;	}
+ .subject1 { background-color:green;	} .subject2 { background-color:red;	} .subject3 { background-color:orange;		} .subject4 { background-color:blue;	} .subject5 { background-color:yellow;		} }
+ th,td { width:50px; }
+</style> <!-- border-collapse: collapse 단선으로, 반대는 separate -->
+<title>HTML5 시간표</title></head>
+<body>
+<table>
+<caption>김윤준 시간표</caption> rowspan="2" class="subject1">자료구조및 실습
+<thead>
+ <tr><th>시간</th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th> </tr></thead>
+<tbody>
+ <tr><td>1교시</td> <td rowspan rowspan="2" class="subject1">임베디드 소프트웨어</td> <td></td> <td></td> <td rowspan rowspan="2" class="subject1">임베디드 소프트웨어</td><td></td></tr>
+ <tr><td>2교시</td> <td></td> <td></td> <td></td></tr>
+ <tr><td>3교시</td> <td></td> <td ></td> <td></td> <td rowspan rowspan="2" class="subject2">캡스톤 디자인</td> <td></td></tr>
+ <tr><td>4교시</td> <td rowspan rowspan="3" class="subject3">예술과 창의적 삶</td> <td></td> <td></td></tr>
+ <tr><td>5교시</td> <td></td> <td rowspan="2" class="subject4">영어회화1</td> <td rowspan="2" class="subject5">인터넷 응용</td> <td></td></tr>
+ <tr><td>6교시</td> <td></td> <td></td> </tr>
+ <tr><td>7교시</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+ <tr><td>8교시</td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+ <tr><td>9교시</td> <td class="subject2">캡스톤디자인</td> <td class="subject5">인터넷응용</td> <td></td> <td></td> <td></td></tr></tbody>
+ </table>
+</body>
+</html>
